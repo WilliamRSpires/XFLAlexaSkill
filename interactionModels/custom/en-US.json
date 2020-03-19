@@ -1,0 +1,155 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "x. f. l. football information",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "ScoreboardIntent",
+          "slots": [
+            {
+              "name": "scoreboard",
+              "type": "Scoreboard"
+            },
+            {
+              "name": "scores",
+              "type": "Scoreboard"
+            }
+          ],
+          "samples": [
+            "what are the {scores}",
+            "Who won on today\u0027s {scoreboard}",
+            "Can you tell me the {scoreboard}",
+            "{scoreboard}",
+            "{scores}",
+            "scores {scores}",
+            "scoreboard {scoreboard}"
+          ]
+        },
+        {
+          "name": "StandingsIntent",
+          "slots": [
+            {
+              "name": "conference",
+              "type": "Standings"
+            },
+            {
+              "name": "Standings",
+              "type": "Standings"
+            },
+            {
+              "name": "playoffs",
+              "type": "Standings"
+            },
+            {
+              "name": "Table",
+              "type": "Standings"
+            }
+          ],
+          "samples": [
+            "Who leads the {Standings}",
+            "What does the {Table} Say",
+            "Football {Standings}",
+            "Who leads the road to the {playoffs}",
+            "{Standings}",
+            "Who is leading the {Standings} ",
+            "Who is leading in the {conference} standings"
+          ]
+        },
+        {
+          "name": "ScheduleIntent",
+          "slots": [
+            {
+              "name": "schedule",
+              "type": "Schedule"
+            },
+            {
+              "name": "play",
+              "type": "Schedule"
+            },
+            {
+              "name": "football",
+              "type": "Schedule"
+            },
+            {
+              "name": "games",
+              "type": "Schedule"
+            }
+          ],
+          "samples": [
+            "What is the {schedule} like",
+            "What are the football {games} this week",
+            "Who is on the {schedule} this week",
+            "What channel can I watch {football} on this week",
+            "Who does the Houston team {play} this week",
+            "Who does the Dallas team {play} this week",
+            "Who does the New York  team {play} this week",
+            "Who does the Seattle team {play} this week",
+            "Who does the Saint Louis team {play} this week",
+            "Who does the Los Angeles team {play} this week",
+            "Who does the DC team {play} play this week",
+            "{schedule}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Schedule"
+              }
+            }
+          ],
+          "name": "Schedule"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Table"
+              }
+            },
+            {
+              "name": {
+                "value": "Standings"
+              }
+            }
+          ],
+          "name": "Standings"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Scores"
+              }
+            },
+            {
+              "name": {
+                "value": "Scoreboard"
+              }
+            }
+          ],
+          "name": "Scoreboard"
+        }
+      ]
+    }
+  },
+  "version": "4"
+}

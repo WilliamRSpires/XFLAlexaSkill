@@ -1,0 +1,65 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "A simple skill that gives information about the XFL football league",
+          "examplePhrases": [
+            "Alexa, open x. f. l. football information"
+          ],
+          "keywords": [
+            "football",
+            "extreme",
+            "houston",
+            "dallas",
+            "defenders",
+            "New",
+            "York",
+            "DC",
+            "Renegades",
+            "Seattle",
+            "Dragons",
+            "Los",
+            "Angeles",
+            "Tampa",
+            "Bay",
+            "St.",
+            "Louis",
+            "Battlehawks"
+          ],
+          "name": "XFL Football Information",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "description": "This skill is designed to keep you informed about the XFL. \n\n\nThis is an unofficial skill and is not officially endorsed by the XFL.",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "sourceLocaleForLanguages": [],
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Just use the invocation and try each intent.",
+      "category": "SPORTS_NEWS",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:768145637293:function:18938e33-f1c6-4c50-bfe9-e52e5f6bb306:Release_1"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {}
+      },
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
